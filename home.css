@@ -1,0 +1,94 @@
+body{
+    height: -webkit-fill-available;
+    height: 100vh;
+    display: flex;
+    background: url(giphy.gif) no-repeat center center fixed;;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 255, 13, 0.301);
+    font-family: sans-serif;
+    color: white;
+    }
+.background-container{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    border-left-style: 0px;
+    background-size: cover;
+    background-position: center;
+}
+.navbar ul{
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.24);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    font-size: 1.5em;
+    padding:15px;
+    display: block;
+    text-align: center;
+    margin: 0px;
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+}
+.navbar li{
+    color: white;
+    float: left;
+}
+.navbar a:hover{
+    background-color: #07575715;
+    color: #00ffff;
+}
+h1{
+    padding: 10px;
+    margin-left: 30px;
+    color: rgba(43, 255, 0, 0.596);
+  font-size: 1.5em;  
+}
+main{
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+@keyframes FadeIn{
+    0%{opacity: 0;}
+}
+.navbar ul{
+    animation-name: FadeIn;
+    animation-duration: 4s;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(0, 0.82, 0.9, 0.15);
+}
+.text{
+    padding: 0px 20px 30px;
+    float: left;
+}
+
+.float-imgs{
+    transform: translateY(-40%);
+    margin-top: 40px;
+    float: right;
+     width: 200px; 
+    clear:right;
+}
+footer{
+    padding: 15px;
+    font-size: 1.3em;
+    display: block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.185);
+    clear: both;
+}
+@media screen and (max-width: 400px) {
+    .float-imgs{
+        width: 250px;
+    }
+}
+html{
+    height: -webkit-fill-available;
+}

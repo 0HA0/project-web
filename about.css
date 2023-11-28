@@ -1,0 +1,85 @@
+body{
+    background: url(Galunggung.jpg) no-repeat center fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    font-family: sans-serif;
+}
+.background-container{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    border-left-style: 0px;
+    background-size: cover;
+    background-position: center;
+}
+.navbar ul{
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.24);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    font-size: 1.5em;
+    padding:15px;
+    display: block;
+    text-align: center;
+    margin: 0px;
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+}
+.navbar li{
+    color: white;
+    float: left;
+}
+.navbar a:hover{
+    background-color: #46393934;
+    color: #00ffff;
+}
+header{
+    color: rgba(4, 104, 255, 0.288);
+    float: left;
+    font-size: 2em;
+    padding:30px;
+}
+header:hover{
+    color: rgba(9, 28, 201, 0.247);
+}
+main{
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+@keyframes glowing{
+    50%{box-shadow: 5px 5px 10px red}
+}
+.navbar ul{
+    animation-name: glowing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(0, 0.82, 0.9, 0.15);
+}
+.float-img{
+    background-color: black;
+    clear: right;
+    height: 200px;;
+    float: right; 
+    margin-right: 10px; 
+    margin-top: 10px; 
+    border: solid 1px; padding: 2px;
+}
+article{
+    background-color: rgba(0, 0, 0, 0.534);
+    color: rgb(255, 0, 0);
+    padding: 50px;
+}
+@media screen and (max-width: 500px) {
+    aside, section, article{
+        width: 100%;
+    }
+}
